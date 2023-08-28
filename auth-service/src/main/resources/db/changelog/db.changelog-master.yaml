@@ -1,0 +1,49 @@
+databaseChangeLog:
+  - changeSet:
+      id: 'V1-create-users-table'
+      author: 'a.maksut'
+      changes:
+        - sqlFile:
+            path: 'changeset/V1-create-users-table.sql'
+            dbms: 'postgresql'
+            encoding: 'UTF-8'
+            endDelimiter: ';'
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
+  - changeSet:
+      id: 'V2-create-token-table'
+      author: 'a.maksut'
+      changes:
+        - sqlFile:
+            path: 'changeset/V2-create-token-table.sql'
+            dbms: 'postgresql'
+            encoding: 'UTF-8'
+            endDelimiter: ';'
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
+  - changeSet:
+      id: 'V3-create-password-table'
+      author: 'a.maksut'
+      changes:
+        - sqlFile:
+            path: 'changeset/V3-create-password-table.sql'
+            dbms: 'postgresql'
+            encoding: 'UTF-8'
+            endDelimiter: ';'
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
+  - changeSet:
+      id: 'V4-insert-default-users'
+      author: 'a.maksut'
+      changes:
+        - sqlFile:
+            path: 'changeset/V4-insert-default-users.sql'
+            dbms: 'postgresql'
+            encoding: 'UTF-8'
+            endDelimiter: ';'
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
